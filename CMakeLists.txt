@@ -14,5 +14,5 @@ set(SYNTACTS_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 FetchContent_Declare(syntacts GIT_REPOSITORY https://github.com/mahilab/Syntacts.git)
 FetchContent_MakeAvailable(syntacts)
 
-add_executable(draw main.cpp)
+add_executable(draw draw.cpp draw.rc)
 target_link_libraries(draw mahi::gui syntacts)
